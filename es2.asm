@@ -1,16 +1,19 @@
 .model small
 .stack 200h
 .data
-    msg db 'Hello, world!$'
+    num db ?
 
 .code
 
 main:
     mov ax, @data
     mov ds, ax
-    mov dx,offset msg
 
-    mov ah, 09h
+    mov num, 03h
+    mov dl, num
+    add dl, 30h
+
+    mov ah, 02h
     int 21h
 
     mov ah, 4ch
