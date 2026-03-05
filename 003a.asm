@@ -22,7 +22,7 @@ main:
 	
 	mov dl,num
 	add dl,num1
-	mov ah,02h
+	mov ah,02h ;stampa char
 	int 21h
 	mov ah,4ch
 	int 21h
