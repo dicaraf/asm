@@ -1,0 +1,25 @@
+SELEZIONE IF
+ASSEMBLY  --->   SALTI
+SALTO INCONDIZIONATO 
+jmp     -> jump
+SALTO CONDIZIONATO
+jb ---->    <
+jbe ---->   <=
+jg ---->    >
+jge ---->   >=
+jz ---->    =0
+je ---->    ==
+
+COME FUNZIONA IN ASSEMBLY IL SALTO INCONDIZIONATO 
+	jmp fine(etichetta)
+	...
+fine:
+	.....
+
+COME FUNZIONA IN ASSEMBLY IL SALTO CONDIZIONATO 
+i salti condizionati devono essere preceduti dal compare
+	cmp al,n
+	jg fine(etichetta) --->  se al>n
+	....
+fine: 
+	.....

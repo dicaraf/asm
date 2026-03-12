@@ -66,7 +66,7 @@ main:
     mov ah,09h
     int 21h
 
-    add bl,30h          ; numero → ASCII
+    add bl,30h          ; oppure 48d, numero → ASCII
     mov dl,bl
     mov ah,02h
     int 21h
